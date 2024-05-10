@@ -299,8 +299,8 @@ int main(){
     for (int i = 0; i < cant_jugadores - 1; i ++){  // Ordenar los totales y los indices para saber quién ganó o si hubo empate
         for (int j = 0; j < cant_jugadores - i - 1; j ++){ // Se ordenan los arrays con el método burbuja
             if (total_puntos[j + 1] > total_puntos[j]){
-                ordenar_arrays(total_puntos, j, j + 1);
-                ordenar_arrays(indices, j, j + 1);
+                ordenar_array(total_puntos, j, j + 1);
+                ordenar_array(indices, j, j + 1);
             }
         }
     }
